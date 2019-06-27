@@ -1,0 +1,6 @@
+# CRLF for route endings, except for gradlew.bat
+* text eol=lf
+gradlew.bat eol=crlf
+
+data/* binary eol=crlf
+gradle/wrapper/* binary eol=crlf

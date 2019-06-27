@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.univ.amu.sin4u05.igl.transit.ui.result.LineView?>
+<?import javafx.scene.control.Label?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="fr.univ.amu.sin4u05.igl.transit.ui.result.LineView"
+         styleClass="line-view"
+         spacing="2.5">
+
+    <Label fx:id="icon"/>
+    <Label fx:id="label" styleClass="line-label" textOverrun="CLIP"/>
+</fx:root>

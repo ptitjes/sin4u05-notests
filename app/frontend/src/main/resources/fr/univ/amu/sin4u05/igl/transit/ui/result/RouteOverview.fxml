@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.univ.amu.sin4u05.igl.transit.ui.result.RouteOverview?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="fr.univ.amu.sin4u05.igl.transit.ui.result.RouteOverview"
+         styleClass="route-overview" spacing="5">
+    <padding>
+        <Insets top="6" left="5" bottom="5" right="5"/>
+    </padding>
+
+    <HBox styleClass="header">
+        <HBox fx:id="stepList" maxWidth="Infinity" HBox.hgrow="ALWAYS" spacing="7"/>
+    </HBox>
+    <Region minWidth="5"/>
+    <HBox>
+        <Label fx:id="times" maxWidth="Infinity" HBox.hgrow="ALWAYS"/>
+        <Label fx:id="duration" styleClass="duration"/>
+    </HBox>
+</fx:root>

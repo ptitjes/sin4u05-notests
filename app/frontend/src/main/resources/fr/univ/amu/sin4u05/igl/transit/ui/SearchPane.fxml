@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.univ.amu.sin4u05.igl.transit.ui.SearchPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="fr.univ.amu.sin4u05.igl.transit.ui.SearchPane"
+         styleClass="search-pane"
+         spacing="5">
+    <padding>
+        <Insets top="5" left="5" bottom="5" right="5"/>
+    </padding>
+
+    <HBox spacing="5">
+        <Label minWidth="-Infinity">From</Label>
+        <TextField fx:id="fromStation" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Region/>
+        <Button fx:id="swapButton" onAction="#swapFromTo">
+            <graphic>
+                <FontIcon iconLiteral="gmi-swap-horiz" iconSize="15"/>
+            </graphic>
+        </Button>
+        <Region/>
+        <Label minWidth="-Infinity">To</Label>
+        <TextField fx:id="toStation" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Region/>
+        <Label fx:id="startTimeLabel" minWidth="-Infinity" styleClass="start-time"
+               onMouseClicked="#showTimePopover">
+            Now
+        </Label>
+        <Region/>
+        <Button fx:id="refreshButton" onAction="#refresh">
+            <graphic>
+                <FontIcon iconLiteral="gmi-refresh" iconSize="15"/>
+            </graphic>
+        </Button>
+    </HBox>
+</fx:root>

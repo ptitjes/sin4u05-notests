@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.univ.amu.sin4u05.igl.transit.ui.MainPane?>
+<?import fr.univ.amu.sin4u05.igl.transit.ui.result.RouteDetails?>
+<?import fr.univ.amu.sin4u05.igl.transit.ui.SearchPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="fr.univ.amu.sin4u05.igl.transit.ui.MainPane"
+         fx:id="root">
+
+    <SearchPane fx:id="searchPane"/>
+    <ProgressBar fx:id="progressBar" progress="0"
+                 minHeight="4" maxHeight="4" prefWidth="${root.width}"/>
+    <SplitPane fx:id="splitPane" VBox.vgrow="ALWAYS" maxHeight="Infinity">
+        <ListView fx:id="routesOverview"/>
+        <RouteDetails fx:id="routeDetails"/>
+        <AnchorPane fx:id="mapContainer"/>
+    </SplitPane>
+</fx:root>

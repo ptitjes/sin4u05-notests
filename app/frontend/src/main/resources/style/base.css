@@ -1,0 +1,97 @@
+.root {
+    /*-fx-font-size: 24px;*/
+}
+
+/* MainPane */
+
+#routesOverview .list-cell {
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-insets: 0 0 1 0;
+}
+
+#routesOverview .list-cell:empty {
+    -fx-border-width: 0;
+}
+
+#routesOverview .list-cell:even,
+#routesOverview .list-cell:odd {
+    -fx-background-color: transparent;
+}
+
+#routesOverview .list-cell:filled:selected:focused,
+#routesOverview .list-cell:filled:selected {
+    -fx-background-color: yellow;
+}
+
+/* SearchPane */
+
+.search-pane HBox {
+    -fx-alignment: center;
+}
+
+/* ProgressBar */
+
+.progress-bar > .bar {
+    -fx-background-color: -fx-accent;
+    -fx-background-insets: 0 0 0 0;
+}
+
+/* RouteOverview */
+
+.route-overview {
+    -fx-min-height: 50px;
+}
+
+.route-overview * {
+    -fx-alignment: baseline-left;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.route-overview .header {
+    -fx-font-weight: bold;
+}
+
+.route-overview .duration {
+    -fx-font-weight: bold;
+}
+
+.line-view {
+    -fx-padding: 0 2 0 0;
+}
+
+.line-view * {
+    -fx-icon-size: 18px;
+}
+
+.line-view .line-label {
+    -fx-padding: 2 3 2 4;
+    -fx-text-fill: white;
+}
+
+.walk-view * {
+    -fx-icon-size: 18px;
+}
+
+.walk-view .walking-time {
+    -fx-font-size: 9px;
+    -fx-font-weight: normal;
+    -fx-translate-x: -2;
+    -fx-translate-y: 3;
+}
+
+/* RouteDetails */
+
+.route-details {
+    -fx-background-color: white;
+}
+
+.route-details > * {
+    -fx-background-color: transparent;
+}
+
+.start-time {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+}

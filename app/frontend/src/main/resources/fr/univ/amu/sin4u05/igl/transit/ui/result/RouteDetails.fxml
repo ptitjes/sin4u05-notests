@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.univ.amu.sin4u05.igl.transit.ui.result.RouteDetails?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="fr.univ.amu.sin4u05.igl.transit.ui.result.RouteDetails"
+         styleClass="route-details">
+    <padding>
+        <Insets top="10" left="10" bottom="10" right="10"/>
+    </padding>
+
+    <StackPane fx:id="stackPane">
+        <Pane fx:id="linesPane">
+            <Group fx:id="linesCanvas"/>
+        </Pane>
+        <VBox>
+            <VBox fx:id="stepList" maxHeight="Infinity" VBox.vgrow="ALWAYS" spacing="5"/>
+        </VBox>
+    </StackPane>
+</fx:root>
